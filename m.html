@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<style>
+    body{
+        background-color: rgb(180, 213, 241);
+        text-align: center;
+    }
+    
+    form{
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        background-color: rgb(252, 252, 252);
+        box-shadow: 2px 5px 15px black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+
+    }
+    .form-control{
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    .form-control label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-control input
+    {
+        border: 1px solid;
+        border-radius: 2px;
+    
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+    <H1>Feedback Form</H1>
+    <form id="form">
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-control">
+            <label for="mail" id="label-email">
+                Email
+            </label>
+            <input type="text" id="label-name" placeholder="Enter your email">
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+            <input type="text" id="label-name" placeholder="Enter your Age">
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Would you recommend GeeksforGeeks to a friend?
+            </label>
+            <select name="role" id="role">
+                <option value="Student">Student</option>
+                <option value="Intern">Intern</option>
+                <option value="professional">professional</option>
+                <option value="other">other</option>
+
+            </select>
+        </div>
+        <div class="form-control">
+            <label >
+            Languages (Check all that apply)
+            </label>
+    
+                <input type="checkbox" name="inp-1">C
+            </label>
+        </div>
+        <div class="form-control">
+            <label >
+                <input type="checkbox" name="inp-2">C++
+            </label>
+        </div>
+        <div class="form-control">
+            <label >
+                <input type="checkbox" name="inp-2">Python
+            </label>
+        </div>
+        <div class="form-control">
+            <label >
+                <input type="checkbox" name="inp-2">Java
+            </label>
+        </div>
+        <div class="form-control">
+            <label >
+                <input type="checkbox" name="inp-2">HTML
+            </label>
+        </div>
+        <div class="form-control">
+            <label> Any comments or suggestions</label>
+            <label for="text">
+                <input type="text" placeholder="comment">
+            </label>
+        </div>
+        <div>
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
